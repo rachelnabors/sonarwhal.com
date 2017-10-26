@@ -1,0 +1,1 @@
+!function(){"use strict";"serviceWorker"in navigator&&navigator.serviceWorker.getRegistrations().then(function(r){for(var e=0;e<r.length;e++)r[e].unregister()})}();

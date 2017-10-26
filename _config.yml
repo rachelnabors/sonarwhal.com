@@ -1,0 +1,151 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: sonar
+subtitle:
+description:
+author:
+language:
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: /
+root: /
+permalink:
+permalink_defaults:
+sonarRepoRoot: https://github.com/sonarwhal/sonar
+sonarRoot: https://sonarwhal.com
+
+# Directory
+source_dir: src/hexo/source
+public_dir: dist
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :index.md # File name of new posts
+default_layout: index
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 0
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: ../src/hexo/themes/sonarwhal
+
+# Config markdown rendering
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: false
+  smartLists: true
+  smartypants: true
+  modifyAnchors: 1
+  autolink: true
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
+
+# Analytics
+google_analytics: UA-101540923-1
+
+# Algolia
+appId: 0R8E5SPAFP
+apiKey: 2ee58f908e6d720c4f72a9645ce0e857
+
+# Minifier
+html_minifier:
+  enable: true
+  ignore_error: false
+  exclude:
+
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
+
+css_minifier:
+  enable: true
+  exclude:
+    - '*.min.css'
+
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+
+# offline config passed to sw-precache.
+offline:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+  - dist/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: dist
+  verbose: true
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: avatars.githubusercontent.com
+
+# predefined descriptions for front matter:
+descriptions:
+  changelog: Check all the changes in the different sonar versions
+  "docs/index.md": Learn how to use sonar, what things it checks, and how you can create your own rules
+  faq: Got a question? We might have an answer for you!
+  governance: Learn more about how sonar is organized internally
+  "user-guide/index.md": Anything you need to know about using sonar and configure it
+  "user-guide/connectors": List of core connectors and the different configurations they have.
+  "user-guide/formatters": List of core formatters and how they look like
+  "user-guide/rules/index.md": List of core rules shorted by category
+  "developer-guide/connectors/index.md": All the things to take into account if you are going to develop a new connector
+  "developer-guide/connectors/events.md": List of events that any core connector should support
+  "developer-guide/contributing": If you want to contribute to sonar, read this first
+  "developer-guide/formatters": All the things to take into account if you are going to develop a new formatter
+  "developer-guide/rules": All the things to take into account if you are going to develop a new rule
+  "developer-guide/development-environment": What you need to do to start developing for sonar
+  "developer-guide/index.md": Learn about the different pieces that build sonar and what each one of them does
+

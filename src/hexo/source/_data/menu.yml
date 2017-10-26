@@ -1,0 +1,37 @@
+- title: Scanner
+  id: scanner
+  link: /scanner/
+
+- title: Documentation
+  id: docs
+  link: /docs/
+  items:
+  - id: developer-guide
+    link: /docs/developer-guide/
+    title: Developer Guide
+  - id: rules
+    link: /docs/user-guide/rules/
+    title: Rules
+  - id: user-guide
+    link: /docs/user-guide/
+    title: User Guide
+
+- title: About
+  id: about
+  link: /about/
+  items:
+  - id: faq
+    title: FAQ
+    link: /about/faq.html
+  - id: changelog
+    title: Changelog
+    link: /about/changelog.html
+  - id: governance
+    title: Governance
+    link: /about/governance.html
+  - id: contributors
+    title: Contributors
+    link: /about/contributors.html
+  - id: code-of-conduct
+    title: Code of Conduct
+    link: https://js.foundation/community/code-of-conduct

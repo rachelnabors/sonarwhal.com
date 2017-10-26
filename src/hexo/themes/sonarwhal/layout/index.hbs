@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>sonar, a linting tool for the web</title>
+    {{>metas}}
+
+    {{> styles}}
+    <link rel="stylesheet" href="{{url_for "/core/css/home.css"}}">
+</head>
+
+<body>
+
+    {{>header navs=site.data.menu}}
+    {{>home}}
+    {{>footer navs=site.data.menu}}
+
+    {{>scripts}}
+</body>
+</html>

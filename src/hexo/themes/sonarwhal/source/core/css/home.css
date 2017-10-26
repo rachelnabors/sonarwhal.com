@@ -1,0 +1,266 @@
+/*
+ * HOME PAGE
+ * =============================================
+ */
+
+body {
+    background-color: #0c1366;
+    color: #fff;
+}
+
+main {
+    margin-bottom: 0;
+}
+
+.bg-wrap-home {
+    background-color: #4046dd;
+}
+
+.top-illustration {
+    display: none;
+}
+
+.sub-illustration {
+    width: 35rem;
+}
+
+.home-container--section .headline::before {
+    border: none;
+}
+
+@media (min-width: 48em) {
+
+    .top-illustration {
+        position: relative;
+        display: block;
+        height: 15.7rem;
+    }
+
+    #iceberg1 {
+        position: relative;
+        width: 25rem;
+
+        animation: floating 4s infinite normal ease-out;
+    }
+
+    #iceberg2 {
+        position: absolute;
+        margin-top: 11rem;
+        margin-left: 4rem;
+        width: 15rem;
+
+        animation: floating 5s infinite normal ease-out;
+    }
+
+    #iceberg3 {
+        position: absolute;
+        margin-top: 7.5rem;
+        right: 0;
+        width: 23rem;
+
+        animation: floating 6s infinite 1s normal ease-out;
+    }
+
+    #narwhal {
+        position: absolute;
+        right: 22rem;
+        margin-top: 5rem;
+        width: 45rem;
+        z-index: 1;
+
+        animation: floating 6s infinite .5s normal ease-out;
+    }
+
+
+    @keyframes floating {
+
+        0% {
+            transform: translateY(-10px);
+        }
+
+        50% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+
+}
+
+.home-container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.home-container--alt {
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.home-container h1 {
+    margin: 0 auto;
+    color: #fff;
+}
+
+.home-container .title:nth-child(2) {
+    margin: 1.2rem auto 2.4rem;
+}
+
+.home-container--section {
+    padding: 4.8rem 0;
+
+    /* remove text-align after scanner is implemented */
+    text-align: center;
+}
+
+.home-container__features {
+    text-align: left;
+}
+
+.home-container__features h2 {
+    text-align: center;
+}
+
+.home-container__features .feature_highlight {
+    font-size: 1.6rem;
+    margin-top: 4.8rem;
+    letter-spacing: .06rem;
+    line-height: 2.4rem;
+}
+
+.home-container__features a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.home-container__features a:hover {
+    background-color: #d43e2b;
+}
+
+.home-container__features h2,
+.home-container__documentation h2,
+.home-container__install h2 {
+    margin: 0 auto 4.8rem auto;
+}
+
+.home-container__documentation .module > a {
+    display: block;
+    padding: 1rem 0;
+    letter-spacing: .1rem;
+    transition: .3s ease-out;
+}
+
+.home-container__documentation .module > a:hover {
+    background-color: hsla(238, 66%, 58%, .3);
+    text-decoration: none;
+}
+
+.home-container__documentation a > p {
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 2.4rem;
+}
+
+.home-container--input {
+    margin: 0 auto;
+    max-width: 96rem;
+}
+
+/* stylelint-disable */
+.dark-blue {
+    position: relative;
+    background-color: hsla(240, 82%, 21%, .9);
+    z-index: 1;
+}
+
+.icons--home {
+    display: block;
+    max-width: 10rem;
+    width: 100%;
+    margin: 2.4rem auto;
+}
+
+/* Custom Type Home */
+
+.subheading--home {
+    letter-spacing: .06rem;
+    text-transform: none;
+}
+
+.subtitle--home {
+    position: relative;
+    font-weight: 400;
+    letter-spacing: .08rem;
+    text-transform: uppercase;
+}
+
+.subtitle--home::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    height: .6rem;
+    width: 10rem;
+    border-bottom: 4px solid #4046dd;
+    top: calc(100% + 1.6rem);
+}
+
+@media (min-width: 33.75em) {
+
+    .vertical-align {
+        display: flex;
+    }
+
+    .module {
+        align-self: flex-end;
+    }
+
+}
+
+.code-wrap {
+    font-family: "Consolas", "Menlo", monospace;
+    font-size: 90%;
+
+    background: hsla(236, 80%, 8%, 0.49);
+    max-width: 45rem;
+    margin: 1.2rem 0;
+    padding: 1.2rem 2rem;
+    border: 4px solid #061044;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.code-wrap ol {
+    list-style: none;
+}
+
+.code-wrap ol li {
+    padding: .6rem 0;
+}
+
+/* Custom Home Page Controls */
+
+input {
+    max-width: 74rem;
+}
+
+/* Home footer is a different color than the rest of the site */
+.footer--home {
+    background-color: #02004f;
+    border-top: 1px solid #fff;
+}
+
+.footer--home a {
+    color: #fff;
+}
+
+.footer--home .footer-nav__item .category {
+    color: #fff;
+}
+
+a .github-icon-svg,
+a .twitter-icon-svg {
+    fill: #fff;
+}
